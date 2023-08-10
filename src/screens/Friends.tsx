@@ -1,10 +1,11 @@
 import React from "react";
 import { Text, View } from "react-native";
+import tabsStyles from "../styles/TabsStyles";
 
 function FriendsTab() {
   return (
-    <View>
-      <Text>Favorites Tab</Text>
+    <View style={tabsStyles.container}>
+      <Text>Friends Tab</Text>
     </View>
   );
 }
