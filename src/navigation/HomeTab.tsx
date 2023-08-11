@@ -4,7 +4,7 @@ import { FontAwesome, MaterialCommunityIcons } from "@expo/vector-icons";
 import MatcherTab from "../screens/Matcher";
 import FavoritesTab from "../screens/Favorites";
 import FriendsTab from "../screens/Friends";
-import SettingsIcon from "../components/SettingsIcon";
+import SettingsButton from "../components/SettingsButton";
 
 export type HomeTabParamList = {
   Matcher: undefined;
@@ -18,7 +18,7 @@ const HomeTab = () => (
   <Tab.Navigator
     screenOptions={{
       headerTitle: "MovieMatcher",
-      headerRight: () => <SettingsIcon />,
+      headerRight: () => <SettingsButton />,
     }}
   >
     <Tab.Screen

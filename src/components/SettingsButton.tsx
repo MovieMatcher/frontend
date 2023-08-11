@@ -6,7 +6,7 @@ import { HomeStackParamList } from "../navigation/HomeStack";
 
 type HomeStack = NavigationProp<HomeStackParamList, "Tabs">;
 
-const SettingsIcon = () => {
+const SettingsButton = () => {
   const navigation = useNavigation<HomeStack>();
 
   return (
@@ -18,4 +18,4 @@ const SettingsIcon = () => {
   );
 };
 
-export default SettingsIcon;
+export default SettingsButton;
