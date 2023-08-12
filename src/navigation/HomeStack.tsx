@@ -14,7 +14,11 @@ const HomeStack = () => {
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>
       <Stack.Screen name={"Tabs"} component={HomeTab} />
-      <Stack.Screen name={"Settings"} component={SettingsScreen} />
+      <Stack.Screen
+        name={"Settings"}
+        component={SettingsScreen}
+        options={{ headerShown: true, headerTitle: "MovieMatcher" }}
+      />
     </Stack.Navigator>
   );
 };
